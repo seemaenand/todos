@@ -1,0 +1,29 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "description": "A simple todos app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js | pino-pretty"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "convict": "^6.2.4",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.1",
+    "pino-http": "^8.4.0",
+    "pino-pretty": "^10.2.0",
+    "request-ip": "^3.3.0",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

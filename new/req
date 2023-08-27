@@ -1,0 +1,65 @@
+Major Project -> todos app
+
+    User -> Boards
+    Boards -> Tasks
+
+Requirements ->
+    User
+    Board
+    Tasks
+
+Features ->
+
+    Type of Users / Roles
+        
+        Guest -> T&Cs, Features, 
+
+        creator
+        normal
+
+        admin
+
+    Boards ->
+        # PUBLIC / Visible to all
+        Board visible to users added in group
+        Editable only by creator -> Add/delete new task, delete the board, manage groups, archive
+
+    Tasks ->
+        Tasks belong to Boards
+        Status -> pending, ongoing, completed, hold 
+            # Once completed, only creator can change status
+
+    # Board DB -> createdBy: userId
+
+User ->
+    Profile -> Name, age
+    Board -> Create, Manage
+        Tasks -> 
+
+SDLC -> Waterfall, V-Model
+    Agile -> Sprints
+
+Design ->
+    Backend -> APIs
+    Frontend -> Seema
+        Template Engine -> EJS
+        HTML, CSS, JS
+
+BE - Express.js 
+DB - SQL database, postgresSQL
+FE - EJS
+
+Auth ->
+    JWT
+
+DB design -> 
+    Rigid -> Normalize
+    Embedded documents
+
+API endpoints
+DB schema
+
+    Goto the board
+    Add user to the board
+    Only then we can assign task
+

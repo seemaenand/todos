@@ -1,0 +1,74 @@
+POST /signup 
+    {
+        firstName, lastName, email, password, t&c
+    }
+
+POST /verify-otp
+    {
+        email, otp
+    }
+
+POST /login
+    {
+        email, password
+    }
+
+POST /forget-password
+    {
+        email
+    }
+
+GET /terms-and-conditions
+
+POST /logout
+
+GET /boards
+    [ { id, name }, { id, name }, { id, name } ]
+
+POST /boards
+    { name }
+
+POST /boards/:boardId/add-user
+    { userId }
+
+GET /boards/:boardId/users
+    [ List of users ]
+
+DELETE /boards/:boardId
+
+GET /boards/:boardId/tasks
+    { id, name, tasks: [ {id, taskName} ] }
+
+POST /boards/:boardId/tasks
+    { name, assignedTo: userId, status }
+
+PATCH /boards/:boardId/tasks/:taskId
+    { name, assignedTo, status }
+
+DELETE /boards/:boardId/tasks/:taskId
+
+GET /users
+
+GET /users/:userId
+
+PATCH /users/:userId
+    {
+        firstName, lastName
+    }
+
+DELETE /users/:userId
+
+POST /users/:userId/change-password
+    {
+        email, oldPassword, newPassword
+    }
+
+GET /tasks
+
+POST /tasks
+    { name, assignedTo, status, boardId }
+
+PATCH /tasks/:taskId
+    { name, assignedTo, status }
+
+DELETE /tasks/:taskId

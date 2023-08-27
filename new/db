@@ -1,0 +1,33 @@
+User: 
+    id -> PK
+    firstName
+    lastName
+    email
+    password
+    t&cFlag
+    isDeleted
+    roleId -> FK // 2
+
+Board:
+    id
+    name
+    isDeleted
+
+Task:
+    id
+    name
+    assignedTo : userId
+    status
+    boardId -> FK
+    isDeleted
+
+UserTaskMapping:
+
+UserBoard:
+    id
+    userId
+    boardId
+
+Role:
+    id: [1,2]
+    roleName: [ 'user', 'admin' ]
